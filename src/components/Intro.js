@@ -38,8 +38,7 @@ export const Intro = () => {
         </ProfileAndTitle>
         <Paragraph>
           <h1>Hello there! 👋</h1> I&apos;m Sammy. An experienced IT consultant with a proven track record of delivering successful projects across various industries. With over a decade of experience in the field, I specialize in Microsoft 365, low-code development, and automation using Power Apps and Power Automate.
-          <br /><br />Prior to this I just completed a Web Development Bootcamp at <a href="technigo.io">technigo.io</a> where I have learn Frontend and Backend development using <strong>JavaScript</strong>, <strong>React Hooks</strong>, <strong>React Native</strong>
-          <strong>Node.js</strong>, <strong>Express</strong>, <strong>MongoDB</strong> and more.<br />
+          <br />
         </Paragraph>
       </LeftContainer>
       <RightImage />

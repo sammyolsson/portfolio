@@ -34,8 +34,6 @@ const TechContainer = styled.section`
 
     @media (max-width: 768px) {
     padding: 60px 10px;
-    padding-top: 250px;
-    padding-bottom: 250px;
   }
 `;
 
