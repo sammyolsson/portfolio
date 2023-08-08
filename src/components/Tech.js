@@ -9,7 +9,7 @@ import styled from 'styled-components';
 export const Tech = () => {
   return (
     <TechContainer>
-      <SectionTitle>Tech I know and love</SectionTitle>
+      <SectionTitle>&lt; Tech I know and love &gt;</SectionTitle>
       <TechParagraph>
         HTML, CSS, <TechMark>JavaScript</TechMark>, Flexbox, Responsive Design,<br />
         Git, <TechMark>React</TechMark>,
@@ -28,8 +28,8 @@ const TechContainer = styled.section`
     flex-direction: column;
     align-items: center;
     background-color: #4731D3;
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     justify-content: center;
 
     @media (max-width: 768px) {
@@ -53,6 +53,7 @@ const TechParagraph = styled.p`
 color: #CCF381;
 font-size: 1.8rem;
 padding: 30px;
+line-height: 49.2px;
 
 @media (max-width: 768px) {
     font-size: 1rem;

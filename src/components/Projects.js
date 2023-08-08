@@ -13,7 +13,7 @@ import FinalProjectIMG from '../assets/final-project.png';
 export const Projects = () => {
   return (
     <Section>
-      <SectionTitle>Featured Projects</SectionTitle>
+      <SectionTitle>&lt; Featured Projects &gt;</SectionTitle>
       <AllProjectsStructure>
 
         {/* FINAL PROJECT ////////////////////////////////////////////////////////////// */}
@@ -177,7 +177,6 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   gap: 25px;
-  width: 700px;
   margin: 0 15% 0 0;
   }
   `;
@@ -238,8 +237,7 @@ const PurpleBackgroundAndProjectButtonStucture = styled.div`
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    /* Add specific styles for tablets here */
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
   `;
@@ -252,13 +250,18 @@ const AllProjectsStructure = styled.div`
 
 const SectionTitle = styled.h2`
 color: #4831D3;
-font-size: 45px;
+font-size: 80px;
 margin-bottom: 10px;
 font-weight: 700;
-font-size: 80px;
 line-height: 108px;
 margin: 35px 0 35px 0;
-`;
+
+@media screen and (max-width: 668px) {
+font-size: 2.5rem;
+line-height: 50px;
+justify-content: center;
+  }
+  `;
 
 const ProjectTitle = styled.h2`
 font-size: 32px;

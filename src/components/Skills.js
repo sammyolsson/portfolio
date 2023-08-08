@@ -8,7 +8,7 @@ import styled from 'styled-components';
 export const Skills = () => {
   return (
     <Section>
-      <SectionTitle>Skills</SectionTitle>
+      <SectionTitle>&lt; Skills &gt;</SectionTitle>
       <SkillsLists>
         <SkillsUl>
           <MainSkill>Frontend</MainSkill>
@@ -37,10 +37,16 @@ export const Skills = () => {
         </SkillsUl>
         <SkillsUl>
           <MainSkill>Other</MainSkill>
-          <SkillsLi>Pair/Mob-Programming</SkillsLi>
           <SkillsLi>UX/UI Design</SkillsLi>
           <SkillsLi>Microsoft Azure & 365</SkillsLi>
           <SkillsLi>Agile Methodology</SkillsLi>
+          <SkillsLi>Pair/Mob-Programming</SkillsLi>
+        </SkillsUl>
+        <SkillsUl>
+          <MainSkill>Happening</MainSkill>
+          <SkillsLi>TypeScript</SkillsLi>
+          <SkillsLi>React Native</SkillsLi>
+          <SkillsLi>Python</SkillsLi>
         </SkillsUl>
       </SkillsLists>
     </Section>
@@ -106,7 +112,7 @@ color: #CCF381;
 
 const SkillsLi = styled.li`
 margin-bottom: 8px;
-font-size: 19px;
+font-size: 20px;
 `
 
 const MainSkill = styled.mark`
