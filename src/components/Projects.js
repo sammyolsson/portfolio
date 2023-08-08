@@ -34,7 +34,6 @@ export const Projects = () => {
               <PurpleBackgroundText>React</PurpleBackgroundText>
               <PurpleBackgroundText>Redux</PurpleBackgroundText>
               <PurpleBackgroundText>MongoDB</PurpleBackgroundText>
-              <PurpleBackgroundText>CSS</PurpleBackgroundText>
             </PurpleBackgroundStructure>
             <ProjectButtonStructure>
               <StyledLinkButton a href="https://melodic-daffodil-115469.netlify.app/" target="_blank" title="Link to the deployed project" rel="noreferrer">
@@ -66,10 +65,10 @@ export const Projects = () => {
           </ProjectTextStructure>
           <PurpleBackgroundAndProjectButtonStucture>
             <PurpleBackgroundStructure>
+              <PurpleBackgroundText>JavaScript</PurpleBackgroundText>
               <PurpleBackgroundText>React</PurpleBackgroundText>
               <PurpleBackgroundText>CSS</PurpleBackgroundText>
               <PurpleBackgroundText>APIs</PurpleBackgroundText>
-              <PurpleBackgroundText>Pair-Programming</PurpleBackgroundText>
             </PurpleBackgroundStructure>
             <ProjectButtonStructure>
               <StyledLinkButton a href="https://camilla-sammy-movie-site.netlify.app/" target="_blank" title="Link to the deployed project" rel="noreferrer">
@@ -104,7 +103,6 @@ export const Projects = () => {
               <PurpleBackgroundText>React</PurpleBackgroundText>
               <PurpleBackgroundText>Node.js</PurpleBackgroundText>
               <PurpleBackgroundText>MongoDB</PurpleBackgroundText>
-              <PurpleBackgroundText>CSS</PurpleBackgroundText>
             </PurpleBackgroundStructure>
             <ProjectButtonStructure>
               <StyledLinkButton a href="https://phenomenal-bavarois-c771f2.netlify.app/" target="_blank" title="Link to the deployed project" rel="noreferrer">
@@ -176,6 +174,7 @@ const Section = styled.section`
   @media screen and (max-width: 668px) {
   display: flex;
   flex-direction: column;
+  margin: 10px;
   }
   `;
 
@@ -205,10 +204,9 @@ const ProjectTextStructure = styled.div`
 const PurpleBackgroundStructure = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  text-align: left;
   gap: 10px;
-  margin: 20px 0 20px 0;
+  text-align: left;
+  margin: 0px 4px 8px 0px;
   `;
 
 const ProjectButtonStructure = styled.div`
@@ -216,7 +214,7 @@ const ProjectButtonStructure = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   text-align: left;
-  gap: 20px;
+  gap: 2px;
   margin-top: 10px;
 
   @media screen and (min-width: 668px) {
@@ -246,10 +244,9 @@ font-size: 80px;
 margin-bottom: 10px;
 font-weight: 700;
 line-height: 108px;
-margin: 35px 0 35px 0;
 
 @media screen and (max-width: 668px) {
-font-size: 1.9rem;
+font-size: 2.2rem;
 line-height: 50px;
   }
   `;
@@ -257,17 +254,17 @@ line-height: 50px;
 const ProjectTitle = styled.h2`
 font-size: 32px;
 line-height: 43.2px;
-margin: 20px 0 15px 0;
 background-color: #000000;
 color: #FFFFFF;
-padding: 4px;
+padding: 2px;
 display: flex;
 justify-content: center;
 margin-bottom: 10px;
-border-radius: 5px;
+border-radius: 3px;
 
-@media screen and (min-width: 668px) {
+@media screen and (max-width: 668px) {
 margin-top: 5px;
+font-size: 1.7rem;
 }
 `
 
@@ -293,7 +290,6 @@ const ParagraphText = styled.p`
     font-weight: 400;
     font-size: 22px;
     line-height: 28.71px;
-
     `;
 
 const PurpleBackgroundText = styled.p`

@@ -70,7 +70,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 background-color: #4731D3;
-padding-top: 100px;
+padding-top: 50px;
 padding-bottom: 120px;
 height: fit-content;
 
@@ -123,7 +123,7 @@ padding: 8px;
 display: flex;
 justify-content: center;
 margin-bottom: 10px;
-border-radius: 5px;
+border-radius: 3px;
 
 @media (min-width: 1024px) {
 width: 150px;

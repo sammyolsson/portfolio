@@ -56,8 +56,9 @@ padding: 30px;
 line-height: 49.2px;
 
 @media (max-width: 768px) {
-    font-size: 1rem;
-    line-height: 25px; 
+    font-size: 1.3rem;
+    line-height: 33px; 
+    text-align: center;
   }
 `;
 
