@@ -52,7 +52,7 @@ const LandingSectionContainer = styled.section`
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 990px;
+    height: 1200px;
     top: 0;
 
     @media (max-width: 320px) {
