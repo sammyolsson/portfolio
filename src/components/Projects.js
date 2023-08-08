@@ -320,7 +320,7 @@ max-height: 45px;
 margin-bottom: 1rem;
 text-decoration: none;
 padding: 7px 15px 7px 10px;
-border: none;
+border: solid black 1px;
 width: fit-content;
 display: flex;
 flex-direction: row;
@@ -330,6 +330,6 @@ align-items: center;
   background: #4831D3;
   color: #FFFFFF;
   cursor: pointer;
-  text-decoration: none;
+  border: none;
   }
   `;

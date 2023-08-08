@@ -73,16 +73,16 @@ height: fit-content;
 `
 
 const ContactHeader = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
-    
+display: flex;
+flex-direction: row;
+gap: 35px;
+align-items: center;
+
 @media screen and (max-width: 668px) {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 100px;
-  }
+  text-align: center; 
+  }  
 `
 
 const SocialIcon = styled.a`
@@ -104,7 +104,6 @@ object-fit: cover;
 
 @media screen and (max-width: 668px) {
   display: flex;
-  margin-left: 50px;
   }
   `;
 
@@ -135,9 +134,14 @@ const ExtraInfo = styled.h4`
 `
 const SocialMediaIcons = styled.div`
     display: flex;
-    justify-content: space-between;
-    width: 180px;
     margin-top: 40px;
+    gap: 20px;
+
+  @media screen and (max-width: 668px) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
 
 @media (min-width: 1024px) {
     margin-top: 20px;
