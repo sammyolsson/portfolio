@@ -72,7 +72,6 @@ const LeftContainer = styled.section`
     flex-direction: column;
     width: 92%;
     height: 100vh;
-    margin: 20px; 
 
     @media (min-width: 668px) and (max-width: 1023px) {
         width: 100%; 
