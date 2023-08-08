@@ -1,62 +1,173 @@
+/* eslint-disable max-len */
 // IMPORTS //
 
 import React from 'react';
 import styled from 'styled-components';
-import ProfileImage from '../assets/placeholder.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faInbox } from '@fortawesome/free-solid-svg-icons';
+import ProfileImage from '../assets/profile-img.png';
+import RightBG from '../assets/right-image.jpg';
 
 // COMPONENT //
 
 export const Intro = () => {
   return (
-    <IntroContainer>
-      <TextSection>
-        <h3>Sammy Olsson</h3>
-        <h2>Fullstack Developer</h2>
-        <h4>with +10 years experience in tech</h4>
-        <Image src={ProfileImage} alt="Profile Picture" />
-      </TextSection>
-      <InfoSection>
-        <h3>👋 Hello there!</h3>
-        <p>I am Sammy. An experienced IT consultant with a proven track record of delivering
-      successful projects across various industries.
-      With over a decade of experience in the field, I specialize in Microsoft 365,
-      low-code development, and automation using Power Apps and Power Automate.
-        </p>
-    👨‍💻 Prior to this I study Full Stack Development at<StyledLink href="https://www.technigo.io/" target="_blank">technigo.io</StyledLink>
-      </InfoSection>
-    </IntroContainer>
+    <LandingSectionContainer>
+      <LeftContainer>
+        <ProfileAndTitle>
+          <ProfilePicture
+            src={ProfileImage}
+            alt="Picture of Sammy Olsson" />
+          <TitleText>
+            <NameStyling>Sammy Olsson</NameStyling>
+            <JobTitleStyling>Full Stack Developer</JobTitleStyling>
+            <ExtraInfo> & IT Consultant with +10years in the tech industry</ExtraInfo>
+            <SocialMediaIcons>
+              <SocialIcon href="mailto:sammyolsson@gmail.com.com" target="_blank">
+                <FontAwesomeIcon icon={faInbox} />
+              </SocialIcon>
+              <SocialIcon href="https://www.linkedin.com/in/sammy-olsson/" target="_blank">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </SocialIcon>
+              <SocialIcon href="https://github.com/sammyolsson" target="_blank">
+                <FontAwesomeIcon icon={faGithub} />
+              </SocialIcon>
+            </SocialMediaIcons>
+          </TitleText>
+        </ProfileAndTitle>
+        <Paragraph>
+          <h1>Hello there! 👋</h1> I&apos;m Sammy. An experienced IT consultant with a proven track record of delivering successful projects across various industries. With over a decade of experience in the field, I specialize in Microsoft 365, low-code development, and automation using Power Apps and Power Automate.
+          <br /><br />Prior to this I just completed a Web Development Bootcamp at <a href="technigo.io">technigo.io</a> where I have learn Frontend and Backend development using <strong>JavaScript</strong>, <strong>React Hooks</strong>, <strong>React Native</strong>
+          <strong>Node.js</strong>, <strong>Express</strong>, <strong>MongoDB</strong> and more.<br />
+        </Paragraph>
+      </LeftContainer>
+      <RightImage />
+    </LandingSectionContainer>
   )
 }
 
 // STYLING //
 
-const IntroContainer = styled.div`
+const LandingSectionContainer = styled.section`
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 990px;
+    top: 0;
+
+    @media (max-width: 320px) {
+        height: 1110px;
+    }
+
+    @media (min-width: 668px) and (max-width: 1023px) {
+        height: 100vh;
+    }
+
+    @media (min-width: 1024px) {
+        height: 100vh;
+    }
+`
+const LeftContainer = styled.section`
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    height: 100vh;
+    margin: 20px; 
+
+    @media (min-width: 668px) and (max-width: 1023px) {
+        width: 100%; 
+    }
+
+    @media (min-width: 1024px) {
+        width: 50%;
+    }
+`
+const RightImage = styled.div`
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    left: 50%;
+    background-image: url(${RightBG});
+    background-size: cover;
+
+    @media (min-width: 668px) and (max-width: 1023px) {
+        display: none; 
+    }
+
+    @media (min-width: 1024px) {
+        display: flex;
+        background-image: url(${RightBG});
+        background-size: cover;
+    }
+`
+const ProfilePicture = styled.img`
+border-radius: 50%;
+width: 164px; 
+height: 164px;
+object-fit: cover;
+  `
+
+const TitleText = styled.div`
+  display: flex;
+  flex-direction: column;
+  `
+
+const NameStyling = styled.h1`
+  color: #4731D3;
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+  `
+
+const JobTitleStyling = styled.h3`
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+  `;
+
+const ExtraInfo = styled.h4`
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+`
+
+const ProfileAndTitle = styled.div`
 display: flex;
-height: 100%;
-text-align: left;
 flex-direction: row;
-justify-content: left;
-padding: 30px;
-gap: 30px;
+gap: 35px;
+align-items: center;
+margin-top: 100px;
+`
+
+const SocialMediaIcons = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    margin-top: 40px;
+
+@media (min-width: 1024px) {
+    margin-top: 20px;
+    }
+`
+const SocialIcon = styled.a`
+font-size: 25px;
+color: #4731D3;
+margin-right: 10px;
+
+:hover {
+  cursor: pointer;
+  color: #000000;
+}
 `;
 
-const InfoSection = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-`;
-
-const TextSection = styled.div`
-`;
-
-const Image = styled.img`
-`;
-
-const StyledLink = styled.a`
-  text-decoration: none;
-  font-weight: bold;
-
-  &:hover {
-    text-decoration: underline;
-  }
+const Paragraph = styled.p`
+    font-size: 1.2em;
+    line-height: 30px;
+    text-align: left;
+    margin-right: 30px;
 `;
