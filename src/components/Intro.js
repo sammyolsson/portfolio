@@ -82,6 +82,12 @@ const LeftContainer = styled.section`
     @media (min-width: 1024px) {
         width: 50%;
     }
+
+  @media screen and (max-width: 668px) {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 5px;
+  }
 `
 const RightImage = styled.div`
     display: none;
@@ -142,13 +148,24 @@ flex-direction: row;
 gap: 35px;
 align-items: center;
 margin-top: 100px;
+
+@media screen and (max-width: 668px) {
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
+  }
 `
 
 const SocialMediaIcons = styled.div`
     display: flex;
-    justify-content: space-between;
-    width: 180px;
     margin-top: 40px;
+    gap: 20px;
+
+  @media screen and (max-width: 668px) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
 
 @media (min-width: 1024px) {
     margin-top: 20px;

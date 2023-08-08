@@ -8,7 +8,7 @@ import styled from 'styled-components';
 export const Skills = () => {
   return (
     <Section>
-      <SectionTitle>&lt; Skills &gt;</SectionTitle>
+      <SectionTitle>Skills</SectionTitle>
       <SkillsLists>
         <SkillsUl>
           <MainSkill>Frontend</MainSkill>

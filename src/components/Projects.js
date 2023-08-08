@@ -13,7 +13,7 @@ import FinalProjectIMG from '../assets/final-project.png';
 export const Projects = () => {
   return (
     <Section>
-      <SectionTitle>&lt; Featured Projects &gt;</SectionTitle>
+      <SectionTitle>Featured Projects</SectionTitle>
       <AllProjectsStructure>
 
         {/* FINAL PROJECT ////////////////////////////////////////////////////////////// */}
@@ -55,7 +55,7 @@ export const Projects = () => {
 
         {/* MOVIE PROJECT ////////////////////////////////////////////////////////////// */}
         <ProjectMainStructure>
-          <ProjectTitle>Project Movies</ProjectTitle>
+          <ProjectTitle>Movies Project</ProjectTitle>
           <ProjectImage src={MoviesIMG} alt="Movies image" />
           <ProjectTextStructure>
             <ParagraphText>
@@ -89,7 +89,7 @@ export const Projects = () => {
         </ProjectMainStructure>
         {/* HAPPY THOUGTHS ////////////////////////////////////////////////////////////// */}
         <ProjectMainStructure>
-          <ProjectTitle>Project Happy Thoughts</ProjectTitle>
+          <ProjectTitle>Happy Thoughts Project</ProjectTitle>
           <ProjectImage src={HappyThoughtsIMG} alt="Happy Thoughts image" />
           <ProjectTextStructure>
             <ParagraphText>
@@ -124,7 +124,7 @@ export const Projects = () => {
         </ProjectMainStructure>
         {/* WEATHER APP ////////////////////////////////////////////////////////////// */}
         <ProjectMainStructure>
-          <ProjectTitle>Project Weather app</ProjectTitle>
+          <ProjectTitle>Weather App Project </ProjectTitle>
           <ProjectImage src={WeatherAppIMG} alt="Weather app image" />
           <ProjectTextStructure>
             <ParagraphText>
@@ -176,8 +176,6 @@ const Section = styled.section`
   @media screen and (max-width: 668px) {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  margin: 0 15% 0 0;
   }
   `;
 
@@ -191,7 +189,6 @@ const ProjectMainStructure = styled.div`
   flex-direction: column;
   gap: 25px;
   width: 700px;
-  margin: 0 15% 0 0;
   }
 
   @media screen and (min-width: 1024px) {
@@ -203,8 +200,6 @@ const ProjectMainStructure = styled.div`
 const ProjectTextStructure = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  text-align: left;
   `;
 
 const PurpleBackgroundStructure = styled.div`
@@ -243,9 +238,6 @@ const PurpleBackgroundAndProjectButtonStucture = styled.div`
   `;
 
 const AllProjectsStructure = styled.div`
-  @media screen and (min-width: 1440px) {
-  gap: 40px;
-  }
   `;
 
 const SectionTitle = styled.h2`
@@ -257,9 +249,8 @@ line-height: 108px;
 margin: 35px 0 35px 0;
 
 @media screen and (max-width: 668px) {
-font-size: 2.5rem;
+font-size: 1.9rem;
 line-height: 50px;
-justify-content: center;
   }
   `;
 

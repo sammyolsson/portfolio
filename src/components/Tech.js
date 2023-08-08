@@ -9,7 +9,7 @@ import styled from 'styled-components';
 export const Tech = () => {
   return (
     <TechContainer>
-      <SectionTitle>&lt; Tech I know and love &gt;</SectionTitle>
+      <SectionTitle>Tech I know and love</SectionTitle>
       <TechParagraph>
         HTML, CSS, <TechMark>JavaScript</TechMark>, Flexbox, Responsive Design,<br />
         Git, <TechMark>React</TechMark>,
@@ -44,7 +44,7 @@ font-size: 80px;
 line-height: 108px;
 
 @media (max-width: 768px) {
-    font-size: 32px;
+    font-size: 1.9rem;
     line-height: 42px;
   }
 `;
@@ -57,7 +57,7 @@ line-height: 49.2px;
 
 @media (max-width: 768px) {
     font-size: 1rem;
-    line-height: 20px; 
+    line-height: 25px; 
   }
 `;
 

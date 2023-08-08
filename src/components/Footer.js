@@ -49,6 +49,12 @@ font-weight: 700;
 font-size: 80px;
 line-height: 108px;
 margin: 35px 0 35px 0;
+
+@media screen and (max-width: 668px) {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 50px;
+  }
 `;
 
 const Section = styled.div`
@@ -60,7 +66,6 @@ padding-top: 100px;
 padding-bottom: 120px;
 height: fit-content;
 
-
 @media (min-width: 1024px) {
     padding-top: 50px;
     padding-bottom: 150px;
@@ -71,6 +76,13 @@ const ContactHeader = styled.div`
     display: flex;
     flex-direction: row;
     gap: 35px;
+    
+@media screen and (max-width: 668px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+  }
 `
 
 const SocialIcon = styled.a`
@@ -89,7 +101,11 @@ border-radius: 50%;
 width: 164px; 
 height: 164px;
 object-fit: cover;
-border: solid #CCF381 2px;
+
+@media screen and (max-width: 668px) {
+  display: flex;
+  margin-left: 50px;
+  }
   `;
 
 const TitleText = styled.div`
