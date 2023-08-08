@@ -31,6 +31,7 @@ const TechContainer = styled.section`
     padding-top: 150px;
     padding-bottom: 150px;
     justify-content: center;
+    height: 100vh;
 
     @media (max-width: 768px) {
     padding: 60px 10px;
