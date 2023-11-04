@@ -23,8 +23,9 @@ const NavbarWrapper = styled.div`
   margin-top: 20px;
 
   @media (max-width: 768px) {
-    display: none;
-    
+    display: flex;
+    flex-direction: row;
+    margin: 0;
   }
 `;
 
@@ -35,8 +36,10 @@ const NavList = styled.ul`
   font-family: 'IBM Plex Sans', sans-serif;
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center; 
+    margin: 5px;
   }
 `;
 
@@ -45,7 +48,10 @@ const NavItem = styled.li`
   font-size: 18px;
 
   @media (max-width: 768px) {
-    margin: 10px 0;
+   display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
   }
 `;
 
@@ -68,6 +74,6 @@ const SayHello = styled.a`
   }
 
   @media (max-width: 768px) {
-    margin-top: 10px;
+    margin-top: 0 10px;
   }
 `;

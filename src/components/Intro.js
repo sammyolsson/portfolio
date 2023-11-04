@@ -65,8 +65,8 @@ height: 200px;
 object-fit: cover;
 
 @media screen and (max-width: 668px) {
-width: 150x; 
-height: 150px;
+width: 200x; 
+height: 200px;
   }
   `
 
