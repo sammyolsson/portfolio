@@ -11,12 +11,12 @@ export const Tech = () => {
     <TechContainer>
       <SectionTitle>Tech I know and love</SectionTitle>
       <TechParagraph>
-        HTML, CSS, <TechMark>JavaScript</TechMark>, Flexbox, Responsive Design,<br />
-        Git, <TechMark>React</TechMark>,
-        Web Accessibility,  Styled Components<br />
+        HTML, CSS, <TechMark>JavaScript</TechMark>, Responsive Design,<br />
+        Git, <TechMark>React</TechMark>, Flexbox,
+        Styled Components<br />
         Redux, Express, Mongo DB, <TechMark>Node.js</TechMark>,
         RESTful API:s,<br />
-        Github, Mob- and Pair-programming, Grid.
+        Github.
       </TechParagraph>
     </TechContainer>
   )
@@ -42,6 +42,7 @@ color: #CCF381;
 font-weight: 700;
 font-size: 80px;
 line-height: 108px;
+font-family: 'IBM Plex Sans', sans-serif;
 
 @media (max-width: 768px) {
     font-size: 1.9rem;
@@ -53,7 +54,7 @@ const TechParagraph = styled.p`
 color: #CCF381;
 font-size: 1.8rem;
 padding: 30px;
-line-height: 49.2px;
+line-height: 49px;
 
 @media (max-width: 768px) {
     font-size: 1.3rem;

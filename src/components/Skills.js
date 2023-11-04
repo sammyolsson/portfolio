@@ -39,6 +39,7 @@ export const Skills = () => {
           <MainSkill>Other</MainSkill>
           <SkillsLi>UX/UI Design</SkillsLi>
           <SkillsLi>Microsoft Azure & 365</SkillsLi>
+          <SkillsLi>Low-Code</SkillsLi>
           <SkillsLi>Agile Methodology</SkillsLi>
           <SkillsLi>Pair/Mob-Programming</SkillsLi>
         </SkillsUl>
@@ -63,6 +64,7 @@ font-weight: 700;
 font-size: 80px;
 line-height: 108px;
 margin: 35px 0 35px 0;
+font-family: 'IBM Plex Sans', sans-serif;
 `;
 
 const Section = styled.div`
@@ -89,6 +91,7 @@ text-align: center;
 width: 70%;
 gap: 80px;
 margin-top: 50px;
+font-family: 'IBM Plex Sans', sans-serif;
 
 @media (min-width: 668px) and (max-width: 1023px) {
      width: 90%;

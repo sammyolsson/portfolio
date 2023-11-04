@@ -14,6 +14,7 @@ export const Footer = () => {
   return (
     <Section>
       <SectionTitle>Let&apos;s build <u>amazing</u> stuff together</SectionTitle>
+      <SectionSubTitle>Interested in collaborating with me?</SectionSubTitle>
       <ContactHeader>
         <ProfilePicture
           src={ProfileImage}
@@ -49,6 +50,7 @@ font-weight: 700;
 font-size: 80px;
 line-height: 108px;
 margin: 35px 0 35px 0;
+font-family: 'IBM Plex Sans', sans-serif;
 
 @media screen and (max-width: 668px) {
   font-size: 3rem;
@@ -110,6 +112,7 @@ object-fit: cover;
 const TitleText = styled.div`
   display: flex;
   flex-direction: column;
+  font-family: 'IBM Plex Sans', sans-serif;
   `
 
 const NameStyling = styled.h1`
@@ -135,7 +138,7 @@ const ExtraInfo = styled.h4`
 const SocialMediaIcons = styled.div`
     display: flex;
     margin-top: 40px;
-    gap: 20px;
+    gap: 40px;
 
   @media screen and (max-width: 668px) {
   display: flex;
@@ -146,4 +149,16 @@ const SocialMediaIcons = styled.div`
 @media (min-width: 1024px) {
     margin-top: 20px;
     }
-`
+`;
+
+const SectionSubTitle = styled.h3`
+color: #4831D3;
+font-size: 30px;
+margin-bottom: 30px;
+font-family: 'IBM Plex Sans', sans-serif;
+
+@media screen and (max-width: 668px) {
+font-size: 2.2rem;
+line-height: 50px;
+  }
+  `;

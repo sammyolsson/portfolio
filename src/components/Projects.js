@@ -13,12 +13,13 @@ import FinalProjectIMG from '../assets/final-project.png';
 export const Projects = () => {
   return (
     <Section>
-      <SectionTitle>Featured Projects</SectionTitle>
+      <SectionTitle>My Recent Work</SectionTitle>
+      <SectionSubTitle>Here are a few past design projects I have worked on. Want to see more? <a href="mailto: sammyolsson@gmail.com">Email me</a></SectionSubTitle>
       <AllProjectsStructure>
 
         {/* FINAL PROJECT ////////////////////////////////////////////////////////////// */}
         <ProjectMainStructure>
-          <ProjectTitle>Homeigo - Final Project</ProjectTitle>
+          <ProjectTitle>Homeigo</ProjectTitle>
           <ProjectImage src={FinalProjectIMG} alt="Final Project" />
           <ProjectTextStructure>
             <ParagraphText>
@@ -54,7 +55,7 @@ export const Projects = () => {
 
         {/* MOVIE PROJECT ////////////////////////////////////////////////////////////// */}
         <ProjectMainStructure>
-          <ProjectTitle>Movies Project</ProjectTitle>
+          <ProjectTitle>Movies</ProjectTitle>
           <ProjectImage src={MoviesIMG} alt="Movies image" />
           <ProjectTextStructure>
             <ParagraphText>
@@ -88,7 +89,7 @@ export const Projects = () => {
         </ProjectMainStructure>
         {/* HAPPY THOUGTHS ////////////////////////////////////////////////////////////// */}
         <ProjectMainStructure>
-          <ProjectTitle>Happy Thoughts Project</ProjectTitle>
+          <ProjectTitle>Happy Thoughts</ProjectTitle>
           <ProjectImage src={HappyThoughtsIMG} alt="Happy Thoughts image" />
           <ProjectTextStructure>
             <ParagraphText>
@@ -122,7 +123,7 @@ export const Projects = () => {
         </ProjectMainStructure>
         {/* WEATHER APP ////////////////////////////////////////////////////////////// */}
         <ProjectMainStructure>
-          <ProjectTitle>Weather App Project </ProjectTitle>
+          <ProjectTitle>Weather App</ProjectTitle>
           <ProjectImage src={WeatherAppIMG} alt="Weather app image" />
           <ProjectTextStructure>
             <ParagraphText>
@@ -162,7 +163,7 @@ export const Projects = () => {
 // STYLING //
 
 const Section = styled.section`
-  background: #ffffff;
+  background: #FEFEFE;
   height: 100%;
   color: #FFD93D;
   text-align: center;
@@ -213,9 +214,7 @@ const ProjectButtonStructure = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  text-align: left;
-  gap: 2px;
-  margin-top: 10px;
+  gap: 35px;
 
   @media screen and (min-width: 668px) {
   flex-direction: row;
@@ -241,9 +240,8 @@ const AllProjectsStructure = styled.div`
 const SectionTitle = styled.h2`
 color: #4831D3;
 font-size: 80px;
-margin-bottom: 10px;
-font-weight: 700;
-line-height: 108px;
+margin-bottom: 0px;
+font-family: 'IBM Plex Sans', sans-serif;
 
 @media screen and (max-width: 668px) {
 font-size: 2.2rem;
@@ -251,7 +249,30 @@ line-height: 50px;
   }
   `;
 
+const SectionSubTitle = styled.h3`
+color: #4831D3;
+font-size: 30px;
+margin-bottom: 10px;
+font-family: 'IBM Plex Sans', sans-serif;
+
+@media screen and (max-width: 668px) {
+font-size: 2.2rem;
+line-height: 50px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #4831D3;
+    text-decoration: underline dotted;
+
+    &:hover {
+    text-decoration: underline;
+  }
+  }
+  `;
+
 const ProjectTitle = styled.h2`
+font-family: 'IBM Plex Sans', sans-serif;
 font-size: 32px;
 line-height: 43.2px;
 background-color: #000000;
@@ -286,7 +307,7 @@ object-position: 50%;
 `;
 const ParagraphText = styled.p`
     color: #000000;
-    font-family: EB Garamond;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 28.71px;
@@ -299,6 +320,7 @@ const PurpleBackgroundText = styled.p`
     line-height: 28.71px;
     display: inline;
     padding: 5px;
+    font-family: 'IBM Plex Sans', sans-serif;
     `;
 
 const StyledIcon = styled.svg`
@@ -321,6 +343,7 @@ width: fit-content;
 display: flex;
 flex-direction: row;
 align-items: center;
+font-family: 'IBM Plex Sans', sans-serif;
 
 &:hover {
   background: #4831D3;
