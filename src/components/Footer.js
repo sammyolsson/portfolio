@@ -53,9 +53,10 @@ margin: 35px 0 35px 0;
 font-family: 'IBM Plex Sans', sans-serif;
 
 @media screen and (max-width: 668px) {
-  font-size: 3rem;
+  font-size: 2.8rem;
   text-align: center;
   line-height: 50px;
+  margin-top: 0;
   }
 `;
 
@@ -113,6 +114,7 @@ const TitleText = styled.div`
   display: flex;
   flex-direction: column;
   font-family: 'IBM Plex Sans', sans-serif;
+  
   `
 
 const NameStyling = styled.h1`
@@ -146,8 +148,8 @@ const SocialMediaIcons = styled.div`
   justify-content: space-around;
   }
 
-@media (min-width: 1024px) {
-    margin-top: 20px;
+@media (max-width: 668px) {
+    margin-top: 25px;
     }
 `;
 
@@ -158,7 +160,7 @@ margin-bottom: 30px;
 font-family: 'IBM Plex Sans', sans-serif;
 
 @media screen and (max-width: 668px) {
-font-size: 2.2rem;
-line-height: 50px;
+font-size: 2rem;
+text-align: center;
   }
   `;

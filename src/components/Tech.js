@@ -46,21 +46,22 @@ font-family: 'IBM Plex Sans', sans-serif;
 
 @media (max-width: 768px) {
     font-size: 1.9rem;
-    line-height: 42px;
-  }
+    line-height: 1.4;
+}
 `;
 
 const TechParagraph = styled.p`
 color: #CCF381;
 font-size: 1.8rem;
 padding: 30px;
-line-height: 49px;
+line-height: 1.4;
+text-align: center;
 
 @media (max-width: 768px) {
     font-size: 1.3rem;
-    line-height: 33px; 
-    text-align: center;
-  }
+    line-height: 1.3;
+    padding: 20px;
+}
 `;
 
 const TechMark = styled.mark`

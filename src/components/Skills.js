@@ -8,7 +8,7 @@ import styled from 'styled-components';
 export const Skills = () => {
   return (
     <Section>
-      <SectionTitle>Skills</SectionTitle>
+      <SectionTitle>My developer skills</SectionTitle>
       <SkillsLists>
         <SkillsUl>
           <MainSkill>Frontend</MainSkill>
@@ -65,6 +65,11 @@ font-size: 80px;
 line-height: 108px;
 margin: 35px 0 35px 0;
 font-family: 'IBM Plex Sans', sans-serif;
+
+@media screen and (max-width: 668px) {
+font-size: 2.2rem;
+line-height: 50px;
+  }
 `;
 
 const Section = styled.div`
@@ -77,33 +82,26 @@ padding-bottom: 120px;
 height: fit-content;
 
 
-@media (min-width: 1024px) {
-    padding-top: 50px;
-    padding-bottom: 150px;
-}
-`
+@media screen and (max-width: 668px) {
+  flex-direction: column;
+  }
+`;
 
 const SkillsLists = styled.div`
 display: flex;
-flex-direction: column;
+flex-direction: row;
 justify-content: center;
 text-align: center;
 width: 70%;
 gap: 80px;
 margin-top: 50px;
 font-family: 'IBM Plex Sans', sans-serif;
+gap: 30px;
 
-@media (min-width: 668px) and (max-width: 1023px) {
-     width: 90%;
-     gap: 40px;
- }
-
-@media (min-width: 1024px) {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    gap: 30px;
-}
+@media screen and (max-width: 668px) {
+  text-align: center;
+  flex-direction: column;
+  }
 `
 
 const SkillsUl = styled.ul`
@@ -111,11 +109,21 @@ font-size: 19px;
 line-height: 32px;
 list-style: none;
 color: #CCF381;
+
+@media screen and (max-width: 668px) {
+  text-align: center;
+  }
 `
 
 const SkillsLi = styled.li`
 margin-bottom: 8px;
+margin-top: 15px;
 font-size: 20px;
+
+@media screen and (max-width: 668px) {
+  text-align: center;
+  
+  }
 `
 
 const MainSkill = styled.mark`
@@ -123,12 +131,11 @@ background-color: #CCF381;
 color: #4731D3;
 font-size: 1.3em;
 padding: 8px;
-display: flex;
 justify-content: center;
-margin-bottom: 10px;
 border-radius: 3px;
 
-@media (min-width: 1024px) {
-width: 150px;
+@media screen and (max-width: 668px) {
+  text-align: center;
+  flex-direction: column;
 }
 `

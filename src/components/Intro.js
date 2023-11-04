@@ -53,31 +53,32 @@ const LandingSectionContainer = styled.section`
     margin-top: 70px;
     background-color: #FEFEFE;
 
-    @media (max-width: 320px) {
-        height: 700px;
-    }
+    @media (max-width: 668px) {
+    height: auto;
+  }
+`;
 
-    @media (min-width: 668px) and (max-width: 1023px) {
-        height: 100vh;
-    }
-
-    @media (min-width: 1024px) {
-        /* height: 100vh; */
-    }
-
-`
 const ProfilePicture = styled.img`
 border-radius: 50%;
 width: 200x; 
 height: 200px;
 object-fit: cover;
+
+@media screen and (max-width: 668px) {
+width: 150x; 
+height: 150px;
+  }
   `
 
 const TitleText = styled.div`
   display: flex;
   flex-direction: column;
   font-family: 'IBM Plex Sans', sans-serif;
-  `
+
+  @media (max-width: 668px) {
+    gap: 5px;
+  }
+  `;
 
 const NameStyling = styled.h1`
   color: #4731D3;
@@ -116,10 +117,9 @@ const SocialMediaIcons = styled.div`
   gap: 40px;
   margin-top: 10px;
 
-  @media screen and (max-width: 668px) {
-    display: flex;
+  @media (max-width: 668px) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center
   }
 `;
 
@@ -142,4 +142,10 @@ const Paragraph = styled.p`
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 100px;
+
+  @media (max-width: 668px) {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+  }
 `;

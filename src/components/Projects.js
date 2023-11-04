@@ -172,7 +172,7 @@ const Section = styled.section`
   align-items: center;
   padding: 0 24px 0 24px;
 
-  @media screen and (max-width: 668px) {
+  @media screen and (max-width: 768px) {
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -184,15 +184,8 @@ const ProjectMainStructure = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 668px) {
+  @media screen and (max-width: 768px) {
   display: flex;
-  flex-direction: column;
-  gap: 25px;
-  width: 700px;
-  }
-
-  @media screen and (min-width: 1024px) {
-  margin: 0 25% 0 0;
   flex-direction: column;
   }
   `;
@@ -200,6 +193,10 @@ const ProjectMainStructure = styled.div`
 const ProjectTextStructure = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+  padding: 10px;
+  }
   `;
 
 const PurpleBackgroundStructure = styled.div`
@@ -208,6 +205,10 @@ const PurpleBackgroundStructure = styled.div`
   gap: 10px;
   text-align: left;
   margin: 0px 4px 8px 0px;
+
+  @media screen and (max-width: 768px) {
+  display: none;
+  }
   `;
 
 const ProjectButtonStructure = styled.div`
@@ -256,8 +257,7 @@ margin-bottom: 10px;
 font-family: 'IBM Plex Sans', sans-serif;
 
 @media screen and (max-width: 668px) {
-font-size: 2.2rem;
-line-height: 50px;
+font-size: 1.3rem;
   }
 
   a {

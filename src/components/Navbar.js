@@ -21,6 +21,11 @@ const NavbarWrapper = styled.div`
   justify-content: flex-end;
   margin-right: 250px;
   margin-top: 20px;
+
+  @media (max-width: 768px) {
+    display: none;
+    
+  }
 `;
 
 const NavList = styled.ul`
@@ -28,11 +33,20 @@ const NavList = styled.ul`
   display: flex;
   justify-content: space-around;
   font-family: 'IBM Plex Sans', sans-serif;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const NavItem = styled.li`
   margin: 0 10px;
   font-size: 18px;
+
+  @media (max-width: 768px) {
+    margin: 10px 0;
+  }
 `;
 
 const Cv = styled.a`
@@ -51,5 +65,9 @@ const SayHello = styled.a`
   &:hover {
     background-color: #6E07F3; 
     color: #FFFFFF;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 10px;
   }
 `;
