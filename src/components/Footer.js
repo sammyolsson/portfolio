@@ -22,7 +22,7 @@ export const Footer = () => {
         <TitleText>
           <NameStyling>Sammy Olsson</NameStyling>
           <JobTitleStyling>Full Stack Developer</JobTitleStyling>
-          <ExtraInfo> & IT Consultant with +10years experience</ExtraInfo>
+          <ExtraInfo>+ all around good guy.</ExtraInfo>
           <SocialMediaIcons>
             <SocialIcon href="mailto:sammyolsson@gmail.com.com" target="_blank">
               <FontAwesomeIcon icon={faInbox} />
@@ -134,7 +134,7 @@ const JobTitleStyling = styled.h3`
 const ExtraInfo = styled.h4`
   color: #565656;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 22px;
   margin: 0;
 `
 const SocialMediaIcons = styled.div`

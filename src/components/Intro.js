@@ -20,7 +20,7 @@ export const Intro = () => {
         <TitleText>
           <NameStyling>Sammy Olsson</NameStyling>
           <JobTitleStyling>Full Stack Developer </JobTitleStyling>
-          <ExtraInfo> & IT Consultant with +10years experience</ExtraInfo>
+          <ExtraInfo> + all around good guy.</ExtraInfo>
           <SocialMediaIcons>
             <SocialIcon href="mailto:sammyolsson@gmail.com.com" target="_blank">
               <FontAwesomeIcon icon={faInbox} />
