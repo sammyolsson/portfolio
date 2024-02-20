@@ -59,7 +59,7 @@ export const Projects = () => {
           <ProjectImage src={MoviesIMG} alt="Movies image" />
           <ProjectTextStructure>
             <ParagraphText>
-              This was a project where we focused on making React apps with multiple pages using routes.
+              This was a project where we focused on making React app using routes.
               We passed information such as product ID:s and titles in the URL and picked it up in the React router in order to load dynamic content.
               We worked with fetching from APIs and the combination of useState & useEffect.
             </ParagraphText>
@@ -180,15 +180,15 @@ const Section = styled.section`
   `;
 
 const ProjectMainStructure = styled.div`
-  padding-bottom: 60px;
+  flex: 1 1 calc(50% - 20px); // Takes up half of the container width minus the gap
   display: flex;
   flex-direction: column;
+  align-items: center; // Centers the content inside each project
 
   @media screen and (max-width: 768px) {
-  display: flex;
-  flex-direction: column;
+    flex: 1 1 100%; // Takes up the full width on smaller screens
   }
-  `;
+`;
 
 const ProjectTextStructure = styled.div`
   display: flex;
@@ -236,7 +236,15 @@ const PurpleBackgroundAndProjectButtonStucture = styled.div`
   `;
 
 const AllProjectsStructure = styled.div`
-  `;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; // Adjust the gap between projects as needed
+  justify-content: center; // Centers the projects in the container
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column; // Stacks the projects on top of each other on smaller screens
+  }
+`;
 
 const SectionTitle = styled.h2`
 color: #4831D3;
