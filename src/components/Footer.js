@@ -9,158 +9,121 @@ import { faInbox } from '@fortawesome/free-solid-svg-icons';
 import ProfileImage from '../assets/profile-img.png';
 
 // COMPONENT //
-
 export const Footer = () => {
   return (
-    <Section>
-      <SectionTitle>Let&apos;s build <u>amazing</u> stuff together</SectionTitle>
-      <SectionSubTitle>Interested in collaborating with me?</SectionSubTitle>
-      <ContactHeader>
-        <ProfilePicture
-          src={ProfileImage}
-          alt="Picture of Sammy Olsson" />
-        <TitleText>
-          <NameStyling>Sammy Olsson</NameStyling>
-          <JobTitleStyling>Full Stack Developer</JobTitleStyling>
-          <ExtraInfo>+ all around good guy.</ExtraInfo>
-          <SocialMediaIcons>
-            <SocialIcon href="mailto:sammyolsson@gmail.com.com" target="_blank">
-              <FontAwesomeIcon icon={faInbox} />
-            </SocialIcon>
-            <SocialIcon href="https://www.linkedin.com/in/sammy-olsson/" target="_blank">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </SocialIcon>
-            <SocialIcon href="https://github.com/sammyolsson" target="_blank">
-              <FontAwesomeIcon icon={faGithub} />
-            </SocialIcon>
-          </SocialMediaIcons>
-        </TitleText>
-      </ContactHeader>
-    </Section>
+    <FooterContainer>
+      <FooterContent>
+        <SectionTitle>Let us build <u>amazing</u> stuff together</SectionTitle>
+        <SectionSubTitle>Interested in collaborating with me?</SectionSubTitle>
+        <ContactInfo>
+          <ProfilePicture src={ProfileImage} alt="Picture of Sammy Olsson" />
+          <ContactText>
+            <NameStyling>Sammy Olsson</NameStyling>
+            <JobTitleStyling>Full Stack Developer</JobTitleStyling>
+            <ExtraInfo>+ all around good guy.</ExtraInfo>
+          </ContactText>
+        </ContactInfo>
+        <SocialMediaIcons>
+          <SocialIcon href="mailto:sammyolsson@gmail.com.com" target="_blank">
+            <FontAwesomeIcon icon={faInbox} />
+          </SocialIcon>
+          <SocialIcon href="https://www.linkedin.com/in/sammy-olsson/" target="_blank">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </SocialIcon>
+          <SocialIcon href="https://github.com/sammyolsson" target="_blank">
+            <FontAwesomeIcon icon={faGithub} />
+          </SocialIcon>
+        </SocialMediaIcons>
+      </FooterContent>
+    </FooterContainer>
   )
 }
 
 // STYLING //
+const FooterContainer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #CCF381;
+  padding: 50px 20px;
+`;
+
+const FooterContent = styled.div`
+  text-align: center;
+  max-width: 960px;
+`;
 
 const SectionTitle = styled.h2`
-color: #4731D3;
-font-size: 45px;
-margin-bottom: 10px;
-font-weight: 700;
-font-size: 80px;
-line-height: 108px;
-margin: 35px 0 35px 0;
-font-family: 'IBM Plex Sans', sans-serif;
+  color: #4731D3;
+  font-size: 2.5rem;
+  margin: 0 0 20px 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+`;
 
-@media screen and (max-width: 668px) {
-  font-size: 2.8rem;
-  text-align: center;
-  line-height: 50px;
-  margin-top: 0;
+const SectionSubTitle = styled.h3`
+  color: #4831D3;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+`;
+
+const ContactInfo = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 35px;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @media (max-width: 668px) {
+    flex-direction: column;
   }
 `;
 
-const Section = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-background-color: #CCF381;
-padding-top: 100px;
-padding-bottom: 120px;
-height: fit-content;
-
-@media (min-width: 1024px) {
-    padding-top: 50px;
-    padding-bottom: 150px;
-}
-`
-
-const ContactHeader = styled.div`
-display: flex;
-flex-direction: row;
-gap: 35px;
-align-items: center;
-
-@media screen and (max-width: 668px) {
+const ContactText = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: center; 
-  }  
-`
-
-const SocialIcon = styled.a`
-  font-size: 30px;
-  color: #4731D3;
-  margin-right: 10px;
-
-  :hover {
-    cursor: pointer;
-    color: #000000;
-  }
-`
-
-const ProfilePicture = styled.img`
-border-radius: 50%;
-width: 164px; 
-height: 164px;
-object-fit: cover;
-
-@media screen and (max-width: 668px) {
-  display: flex;
-  }
-  `;
-
-const TitleText = styled.div`
-  display: flex;
-  flex-direction: column;
-  font-family: 'IBM Plex Sans', sans-serif;
-  
-  `
+`;
 
 const NameStyling = styled.h1`
   color: #4731D3;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.75rem;
   margin: 0;
-  `
+`;
 
 const JobTitleStyling = styled.h3`
-  color: #000000;
+  color: #000;
   font-weight: 700;
-  font-size: 24px;
-  margin: 0;
-  `;
+  font-size: 1.5rem;
+  margin: 5px 0;
+`;
 
 const ExtraInfo = styled.h4`
   color: #565656;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 1.25rem;
   margin: 0;
-`
-const SocialMediaIcons = styled.div`
-    display: flex;
-    margin-top: 40px;
-    gap: 40px;
-
-  @media screen and (max-width: 668px) {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  }
-
-@media (max-width: 668px) {
-    margin-top: 25px;
-    }
 `;
 
-const SectionSubTitle = styled.h3`
-color: #4831D3;
-font-size: 30px;
-margin-bottom: 30px;
-font-family: 'IBM Plex Sans', sans-serif;
+const SocialMediaIcons = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+`;
 
-@media screen and (max-width: 668px) {
-font-size: 2rem;
-text-align: center;
+const SocialIcon = styled.a`
+  font-size: 30px;
+  color: #4731D3;
+
+  &:hover {
+    color: #000;
   }
-  `;
+`;
+
+const ProfilePicture = styled.img`
+  border-radius: 50%;
+  width: 164px;
+  height: 164px;
+  object-fit: cover;
+`;

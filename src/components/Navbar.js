@@ -5,75 +5,60 @@ export const Navbar = () => {
   return (
     <NavbarWrapper>
       <NavList>
-        <NavItem><Cv href="#cv">Curriculum Vitae</Cv></NavItem>
+        <NavItem><Cv href="https://www.linkedin.com/in/sammy-olsson/" target="_blank">Curriculum Vitae</Cv></NavItem>
         <NavItem><SayHello href="https://www.linkedin.com/in/sammy-olsson/" target="_blank">Say Hello</SayHello></NavItem>
       </NavList>
     </NavbarWrapper>
   );
 }
 
-// STYLING
+// Updated STYLING
 
-const NavbarWrapper = styled.div`
-  padding: 10px 0;
-  padding: 1.2rem 0;
+const NavbarWrapper = styled.nav`
+  padding: 1.2rem 2rem;
   display: flex;
   justify-content: flex-end;
-  margin-right: 250px;
-  margin-top: 20px;
+  align-items: center;
+  background-color: transparent;
 
   @media (max-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
+    justify-content: center;
+    padding: 1.2rem 1rem;
   }
 `;
 
 const NavList = styled.ul`
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  font-family: 'IBM Plex Sans', sans-serif;
-
-  @media (max-width: 768px) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; 
-    margin: 5px;
-  }
+  align-items: center;
+  gap: 20px;
 `;
 
 const NavItem = styled.li`
-  margin: 0 10px;
-  font-size: 18px;
+  font-size: 1rem;
+  font-weight: 600;
 
-  @media (max-width: 768px) {
-   display: flex;
-    text-align: center;
-    flex-direction: row;
-    justify-content: center;
+  &:not(:last-child) {
+    margin-right: 20px;
   }
 `;
 
-const Cv = styled.a`
+const linkStyle = `
   text-decoration: none;
-  color: #000000;
-`;
-
-const SayHello = styled.a`
-  text-decoration: none;
-  color: #6E07F3;
-  border: 3px solid #6E07F3;
-  border-radius: 50px;
-  padding: 10px 20px;
-  transition: border-color 0.3s, color 0.3s; 
+  color: inherit;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
 
   &:hover {
-    background-color: #6E07F3; 
-    color: #FFFFFF;
-  }
-
-  @media (max-width: 768px) {
-    margin-top: 0 10px;
+    background-color: #CCF381; // Adjust hover effect color if needed
+    color: #4731D3; // Adjust for contrast
   }
 `;
+
+const Cv = styled.a`${linkStyle}`;
+const SayHello = styled.a`
+  ${linkStyle}
+  border: 2px solid #000000;
+`;
+
